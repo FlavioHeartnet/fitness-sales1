@@ -6689,7 +6689,7 @@ a:hover, span:hover {
 }
 
 .blog .item .info .tag span {
-  color: #12c2e9;
+  color: #D6FB00;
 }
 
 .blog .item h5 {
@@ -6995,6 +6995,7 @@ a:hover, span:hover {
 
 .blog-list .item .img {
   width: 350px;
+  flex: none;
 }
 
 .blog-list .item .cont {
@@ -7026,7 +7027,7 @@ a:hover, span:hover {
 }
 
 .blog-list .item .info .tag span {
-  color: #12c2e9;
+  color: #D6FB00;
 }
 
 .blog-list .item h5 {
@@ -7060,7 +7061,7 @@ a:hover, span:hover {
 .blog-pg .posts .item .content .tags a {
   font-size: 12px;
   font-weight: 500;
-  color: #12c2e9;
+  color: #D6FB00;
   padding-right: 20px;
   position: relative;
 }
