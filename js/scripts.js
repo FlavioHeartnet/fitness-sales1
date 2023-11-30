@@ -8,6 +8,27 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------*/
+var query = window.location.search
+const urlParams = new URLSearchParams(query);    
+
+const type = urlParams.get('type')
+    console.log(type)
+    const julia5kmlink = "https://go.hotmart.com/N88855384Y?dp=1"
+    const julia10kmlink = "https://go.hotmart.com/G88855385P?dp=1"
+
+    switch(type){
+        case 'promo1':
+            
+            break;
+        case 'promo2':
+            document.getElementById("promotion10kmFooter").href = julia10kmlink
+            document.getElementById("promotion10kmFooter1").href = julia10kmlink
+            document.getElementById("promotion10kmcta").href = julia10kmlink
+            document.getElementById("promotion5kmFooter").href = julia5kmlink
+            document.getElementById("promotion5kmFooter1").href = julia5kmlink
+            document.getElementById("promotion5kmcta").href = julia5kmlink
+            break;
+    }
 
 
 $(function () {
@@ -19,7 +40,7 @@ $(function () {
 
     var wind = $(window);
 
-
+    
     $.scrollIt({
         upKey: 38,                // key code to navigate to the next section
         downKey: 40,              // key code to navigate to the previous section
