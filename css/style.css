@@ -8589,7 +8589,7 @@ footer .item .copy-right p a {
     font-size: 28px;
   }
   .video .container .stauts {
-    display: none;
+    display: flex;
   }
   .testimonials .item {
     display: block;
