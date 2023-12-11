@@ -7855,7 +7855,7 @@ footer .item .copy-right p a {
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
   .bg-img {
-    background-position: center !important;
+    background-position: inherit;
   }
   .md-mb10 {
     margin-bottom: 10px;
