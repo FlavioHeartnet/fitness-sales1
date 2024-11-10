@@ -11,25 +11,23 @@
 var query = window.location.search
 const urlParams = new URLSearchParams(query);    
 
-const type = urlParams.get('type')
+const type = urlParams.get('ref')
     console.log(type)
-    const julia5kmlink = "https://go.hotmart.com/N88855384Y?dp=1"
-    const julia10kmlink = "https://go.hotmart.com/G88855385P?dp=1"
-
-    switch(type){
-        case 'promo1':
-            
-            break;
-        case 'promo2':
-            document.getElementById("promotion10kmFooter").href = julia10kmlink
-            document.getElementById("promotion10kmFooter1").href = julia10kmlink
-            document.getElementById("promotion10kmcta").href = julia10kmlink
-            document.getElementById("promotion5kmFooter").href = julia5kmlink
-            document.getElementById("promotion5kmFooter1").href = julia5kmlink
-            document.getElementById("promotion5kmcta").href = julia5kmlink
-            break;
+    if(type){
+        const run5kmlink = `https://hotmart.com/pt-br/marketplace/produtos/5km-iniciante/L88070937C?ref=${type}`
+        const run10kmlink = `https://hotmart.com/pt-br/marketplace/produtos/hagsxd-plano-10km-ars8n/J88667135W?ref=${type}`
+        setLinks(run5kmlink, run10kmlink);
     }
-
+    
+    
+function setLinks(linktoforward1, linktoforward2) {
+    document.getElementById("promotion10kmFooter").href = linktoforward1
+    document.getElementById("promotion10kmFooter1").href = linktoforward1
+    document.getElementById("promotion10kmcta").href = linktoforward1
+    document.getElementById("promotion5kmFooter").href = linktoforward2
+    document.getElementById("promotion5kmFooter1").href = linktoforward2
+    document.getElementById("promotion5kmcta").href = linktoforward2
+}
 
 $(function () {
 
