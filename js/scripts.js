@@ -16,7 +16,7 @@ const type = urlParams.get('ref')
     if(type){
         const run5kmlink = `https://hotmart.com/pt-br/marketplace/produtos/5km-iniciante/L88070937C?ref=${type}`
         const run10kmlink = `https://hotmart.com/pt-br/marketplace/produtos/hagsxd-plano-10km-ars8n/J88667135W?ref=${type}`
-        setLinks(run5kmlink, run10kmlink);
+        setLinks(run10kmlink, run5kmlink);
     }
     
     
